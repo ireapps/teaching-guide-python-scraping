@@ -34,7 +34,7 @@ The pace will be slower than you think, and that's OK! It's not the end of the w
 We recommend that people who come to this class sit for a session on basic Python syntax, or have equivalent experience, but many people who come to this class will have _zero_ experience with programming. Be empathetic and try to remember how frustrating it is to feel lost.
 
 ## Class setup
-We'll have the latest version of Python 3 and [pipenv](https://pipenv.readthedocs.io) to manage the virtual environment and one dependency (`jupyter`), which will already have been installed and tested prior to your session.
+We'll have the latest version of Python 3 and [pipenv](https://pipenv.readthedocs.io) to manage the virtual environment and dependencies (`jupyter`, `bs4` and `requests`), which will already have been installed and tested prior to your session.
 
 ## Class outline
 
