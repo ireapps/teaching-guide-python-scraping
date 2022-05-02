@@ -7,9 +7,9 @@ The class is one hour long. The exercises live in [this Jupyter notebook](https:
 It would be a good idea to [take a spin through the notebook](#run-the-notebook) prior to teaching the session.
 
 ## Session description
-This session will show you how to use the Python programming language to scrape data from websites.
+This session will show you how to use the Python programming language to scrape data from simple websites.
 
-This session is good for people who already know some basic Python syntax (data types, if/else statements, for loops, etc.). We recommend that you attend the Python 101 session beforehand or have equivalent experience before coming to this class. Experience with HTML is a plus but not necessary.
+This session is good for: People who are familiar with Python basics. Experience with HTML is a plus but not necessary.
 
 ## Session goals
 Attendees should leave with a basic understanding of:
@@ -36,7 +36,7 @@ We'll have the latest version of Python 3 installed. We're using the standard li
 
 ### Start up the notebook server
 Begin the class by (slowly!) walking everyone through the process of activating their virtual environments and launching Jupyter:
-1. Open Terminal (or `cmd` or `cygwin` if you're on a PC)
+1. Open the command-line interface
 2. `cd` into your class directory
 3. Activate the virtual environment:
     - Macs: `source env/bin/activate`
@@ -55,6 +55,8 @@ Start marching down the notebook: Practice inspecting a web page, fetch a web pa
 Any time you see `✍️ Try it yourself`, hit the brakes and give everyone a little time to play around with whatever concept you're discussing.
 
 Most of the class will probably be devoted to parsing data out of the BeautifulSoup object, so plan accordingly.
+
+If you have Internet connectivity problems for whatever reason, you can pivot and work on the HTML files saved with the repo: `mlb.html` and `warn.html`.
 
 ### Debugging
 If you can, find an opportunity when someone has gotten an error and take a few minutes to walk through basic debugging strategy: Reading the traceback error from bottom to top, strategic Googling, etc.
