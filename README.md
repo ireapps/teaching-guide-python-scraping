@@ -4,18 +4,18 @@ Thank you for volunteering to teach this one-hour session at our conference! Thi
 The exercises live in [the "Web scraping with Python" Jupyter notebook](https://github.com/ireapps/teaching-guide-python-scraping/blob/master/Web%20scraping%20with%20Python.ipynb). [The other notebook](https://github.com/ireapps/teaching-guide-python-scraping/blob/master/Python%20syntax%20cheat%20sheet.ipynb) has a refresher on some basic Python syntax for folks who are new to Python or could use a reference.
 
 ## Take it for a spin
-At the conference, this repository will be on the conference computers, the virtual environment created and the dependencies (`jupyterlab`, `requests`, `bs4`) installed and tested. You'll probably want to give it a spin before the conference, though. You'll need Python 3 installed on your computer.
+At the conference, this repository will be on the conference computers, the virtual environment created and the dependencies (`jupyterlab`, `requests`, `bs4`) installed and tested.
+
+If you're in a "BYO laptop" room, you might check out CoLab or a similar cloud environment that can load git repos.
+
+
+## Run locally
+You'll need `uv` installed. (Or use your own dependency management software.)
 
 1. Clone or [download/unzip](https://github.com/ireapps/teaching-guide-python-scraping/archive/master.zip) this repo onto your computer
-2. In your command-line interface, cd into the folder
-3. Create a virtual environment (using `venv` or your tooling of choice):
-    - Macs: `python3 -m venv env`
-    - PCs: `python -m venv env`
-4. Activate the virtual environment:
-    - Macs: `source env/bin/activate`
-    - PCs: `.\env\Scripts\activate`
-5. `pip install -r requirements.txt`
-6. `jupyter lab`
+2. `cd` into the folder
+3. `uv sync`
+4. `uv run jupyter lab`
 
 ## Session description
 This session will show you how to use the Python programming language to scrape data from simple websites.
@@ -39,18 +39,16 @@ I Do, We Do, You Do. Demonstrate a concept, work through it together, then give 
 The pace will be slower than you think, and that's OK! It's not the end of the world if you don't get through everything. Many people who come to this class will have zero experience with programming.
 
 ## Class setup
-We'll have the latest version of Python 3 installed. We're using the standard library's `venv` module to manage the virtual environment and project dependencies (`jupyterlab`, `bs4` and `requests`), which will already have been installed and tested prior to your session. Please refer to the Python setup sheet for the conference and let us know if you have any questions.
+We'll have the latest version of Python 3 installed. We're using `uv` to manage the virtual environment and project dependencies (`jupyterlab`, `bs4` and `requests`), which will already have been installed and tested prior to your session.
 
 ## Class outline
 
 ### Start up the notebook server
-Begin the class by walking everyone through the process of activating their virtual environments and launching JupyterLab:
+Begin the class by walking everyone through the process of activating their virtual environments and launching JupyterLab. Or, if you prefer to use a different tool such as the Jupyter plugin for VS Code or whatever, get them set up.
+
 1. Open the command-line interface
 2. `cd` into your class directory (or, if you're on a Mac, you could have them right-click on the class folder and select `Services > New Terminal at folder`)
-3. Activate the virtual environment:
-    - Macs: `source env/bin/activate`
-    - PCs: `.\env\Scripts\activate`
-4. `jupyter lab`
+3. `uv run jupyter lab`
 
 It will take everyone a few minutes to get going. You'll also probably get some questions about what you're doing at this step. Try to avoid a lengthy digression into virtual environments -- it's beyond the scope of this hourlong session, so maybe offer to talk to them after class, or send 'em our way: [training@ire.org](mailto:training@ire.org).
 
@@ -63,7 +61,7 @@ Start working your way through the notebook: Practice inspecting a web page, fet
 
 Any time you see `✍️ Try it yourself`, hit the brakes and give everyone a little time to play around with whatever concept you're discussing.
 
-In IRE's experience, you'll want to budget more time than you'd think for showing how to parse data out of the BeautifulSoup object.
+In our experience, you'll want to budget more time than you'd think for showing how to parse data out of the BeautifulSoup object.
 
 If you have Internet problems, you can pivot and work on the HTML file saved in this directory, `sd-warn.html` -- there's a cell with some commented-out code that folks can run to read in the HTML.
 
